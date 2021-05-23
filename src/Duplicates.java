@@ -10,16 +10,16 @@ public class Duplicates {
         System.out.println(finduplicate(arr));
     }
 
-    public static int finduplicate(int[] arr) {
-        for(int i=0;i<arr.length;i++){
-            for (int j=i+1;j< arr.length;j++){
-                if(arr[i]==arr[j]){
-                    return arr[i];
-                }
-            }
-        }
-        return -1;
-    }
+//    public static int finduplicate(int[] arr) {
+//        for(int i=0;i<arr.length;i++){
+//            for (int j=i+1;j< arr.length;j++){
+//                if(arr[i]==arr[j]){
+//                    return arr[i];
+//                }
+//            }
+//        }
+//        return -1;
+//    }
     // The above approach O(n*n) now below  in O(n)
     public static int finduplicate(int[] arr) {
         Arrays.sort(arr);
